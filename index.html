@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101014">
+<meta name="description" content="Universo Kodesh: tienda espiritual, consultas y biblioteca de conocimiento simbólico.">
+<link rel="manifest" href="manifest.json">
+<title>Universo Kodesh</title>
+<style>
+:root{--bg:#101014;--panel:#19191f;--panel2:#222229;--gold:#d8b56a;--gold2:#f0d99c;--ink:#f7f2e8;--muted:#b9b2a6;--line:#3a3429;--serif:Georgia,'Times New Roman',serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#292319 0,#101014 46rem);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55}a{color:inherit}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#101014eF;border-bottom:1px solid #4b402d;backdrop-filter:blur(12px)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brandlogo{display:block;width:210px;max-height:68px;object-fit:contain;object-position:left center}.navlinks{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.navlinks a{font-size:.9rem;text-decoration:none;color:#ddd4c4;padding:9px 11px;border-radius:20px}.navlinks a:hover{background:#2a261f;color:var(--gold2)}.menu{display:none;background:none;color:var(--ink);border:1px solid var(--line);padding:8px 12px;border-radius:8px}.hero{padding:78px 0 58px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}.eyebrow{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:.75rem;font-weight:700}.hero h1{font:clamp(2.8rem,6vw,5.4rem)/.98 var(--serif);margin:18px 0 22px;letter-spacing:-.04em}.hero h1 em{color:var(--gold2);font-weight:400}.hero p{color:#d0c8bb;max-width:610px;font-size:1.08rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;border-radius:28px;padding:12px 20px;font-weight:700;border:1px solid var(--gold);transition:.2s;cursor:pointer}.btn.primary{background:var(--gold);color:#17140e}.btn.secondary{color:var(--gold2);background:transparent}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.orbital{min-height:340px;display:grid;place-items:center;position:relative}.orbital:before,.orbital:after{content:"";position:absolute;border:1px solid #d8b56a65;border-radius:50%;width:min(80vw,330px);aspect-ratio:1}.orbital:after{width:min(68vw,270px);transform:rotate(45deg);border-radius:43% 57% 45% 55%}.sun{width:190px;height:190px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;text-align:center;background:radial-gradient(circle,#4b3b20,#17140f 70%);box-shadow:0 0 70px #d8b56a21,inset 0 0 30px #d8b56a16}.sun span{font:3.4rem var(--serif);color:var(--gold2)}.sun small{display:block;color:#e5d4aa;letter-spacing:.16em;font-size:.62rem;margin-top:-26px}.orbital .star{position:absolute;color:var(--gold2);font-size:1.25rem}.s1{top:14%;left:24%}.s2{top:22%;right:16%}.s3{bottom:17%;left:17%}.s4{bottom:12%;right:23%}.section{padding:62px 0}.sectionhead{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:26px}.section h2{font:clamp(2rem,4vw,3rem)/1.1 var(--serif);margin:8px 0}.sectionhead p{max-width:520px;color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tile{background:linear-gradient(145deg,#211f1c,#17171c);border:1px solid #39332a;border-radius:18px;padding:24px;min-height:190px;position:relative;overflow:hidden}.tile:after{content:"✧";position:absolute;right:18px;top:8px;font-size:4rem;color:#d8b56a16}.tile .symbol{font-size:1.5rem;color:var(--gold2)}.tile h3{font:1.45rem var(--serif);margin:12px 0 6px}.tile p{color:var(--muted);font-size:.94rem;margin:0 0 16px}.tile a{color:var(--gold2);font-weight:700;text-decoration:none;font-size:.9rem}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.product{background:#1a1a20;border:1px solid #39332a;border-radius:16px;overflow:hidden}.product-art{height:140px;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#5b4826,#211e19 65%);font-size:3rem}.product-body{padding:16px}.product h3{font:1.15rem var(--serif);margin:0 0 5px}.product p{color:var(--muted);font-size:.85rem;min-height:42px;margin:0 0 12px}.product .price{color:var(--gold2);font-weight:700}.product button{margin-top:12px;width:100%;padding:9px;border-radius:20px;background:transparent;color:var(--gold2);border:1px solid var(--gold);cursor:pointer}.notice{background:#29251d;border:1px solid #655334;border-radius:12px;padding:14px 16px;color:#dfd1b2;font-size:.9rem;margin-top:18px}.consultgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.consult{border:1px solid #40372a;background:#1b1a1e;border-radius:16px;padding:22px}.consult h3{font:1.4rem var(--serif);margin:8px 0}.consult p{color:var(--muted);font-size:.93rem}.formbox{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;background:#1b1a1e;border:1px solid #40372a;border-radius:20px;padding:28px}.formbox p{color:var(--muted)}label{display:block;color:#e8d9b8;font-size:.87rem;margin:12px 0 6px}input,select,textarea{width:100%;background:#111116;color:var(--ink);border:1px solid #4a4133;border-radius:9px;padding:12px}textarea{min-height:100px;resize:vertical}.formrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}.bloglist{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.blogcard{padding:22px;border-radius:16px;background:#1a1a20;border:1px solid #38332a}.blogcard small{color:var(--gold)}.blogcard h3{font:1.35rem var(--serif)}.blogcard p{color:var(--muted);font-size:.9rem}.footer{border-top:1px solid #39332a;padding:34px 0 42px;color:var(--muted)}.footrow{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}.footrow strong{font-family:var(--serif);color:var(--gold2)}.wa-float{position:fixed;right:18px;bottom:18px;z-index:25;border-radius:30px;background:#d8b56a;color:#17140e;text-decoration:none;padding:13px 17px;font-weight:800;box-shadow:0 6px 25px #0008}.modal{position:fixed;inset:0;background:#000b;z-index:50;display:none;place-items:center;padding:20px}.modal.open{display:grid}.modalbox{max-width:480px;width:100%;padding:26px;background:#1a1a20;border:1px solid var(--gold);border-radius:18px}.modalbox h3{font:1.7rem var(--serif)}.close{float:right;background:none;color:var(--ink);border:1px solid var(--line);border-radius:50%;width:34px;height:34px;cursor:pointer}.empty{color:var(--muted);padding:18px 0}.hide{display:none!important}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:50px;gap:10px}.orbital{min-height:280px}.grid,.consultgrid,.bloglist{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.formbox{grid-template-columns:1fr}.navlinks{display:none;position:absolute;top:75px;left:0;right:0;background:#111116;padding:14px 4%;border-bottom:1px solid var(--line)}.navlinks.show{display:flex;flex-direction:column}.navlinks a{padding:12px}.menu{display:block}}
+@media(max-width:520px){.grid,.consultgrid,.bloglist{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product-art{height:110px}.product-body{padding:12px}.product h3{font-size:1rem}.section{padding:44px 0}.hero{padding:45px 0 30px}.hero h1{font-size:3rem}.sectionhead{display:block}.formrow{grid-template-columns:1fr}.wa-float{right:12px;bottom:12px;font-size:.88rem}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="wrap nav">
+  <a class="brand" href="#inicio" aria-label="Universo Kodesh inicio"><img class="brandlogo" src="logo-universo-kodesh.png" alt="Logotipo oficial de Universo Kodesh"></a>
+  <button class="menu" id="menuBtn" aria-label="Abrir menú">☰</button>
+  <nav class="navlinks" id="navlinks">
+   <a href="#tienda">Tienda</a><a href="#consultas">Consultas</a><a href="#perfil">Perfil Kodesh</a><a href="#biblioteca">Biblioteca</a><a href="#nosotros">Nosotros</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="wrap hero" id="inicio">
+ <div><div class="eyebrow">Un espacio para explorar lo simbólico</div>
+  <h1>Encuentra tu<br><em>propio universo.</em></h1>
+  <p>Objetos con significado, consultas personalizadas y una biblioteca para explorar la sabiduría espiritual, los símbolos y las tradiciones de conocimiento.</p>
+  <div class="actions"><a class="btn primary" href="#tienda">Explorar la tienda</a><a class="btn secondary" href="#consultas">Conocer las consultas</a></div>
+ </div>
+ <div class="orbital" aria-label="Símbolo decorativo"><span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">✧</span><span class="star s4">✦</span><div class="sun"><div><span>✧</span><small>UNIVERSO KODESH</small></div></div></div>
+</section>
+<section class="section wrap" id="tienda">
+ <div class="sectionhead"><div><div class="eyebrow">Objetos con intención</div><h2>La tienda Kodesh</h2></div><p>Una selección inicial de categorías. Los productos y precios que ves aquí son ejemplos de diseño; se sustituyen por tu inventario real.</p></div>
+ <div class="grid">
+  <article class="tile"><div class="symbol">◉</div><h3>Veladoras y velas</h3><p>Velas rituales, veladoras de intención y accesorios.</p><a href="#pedido" data-category="Veladoras y velas">Consultar productos →</a></article>
+  <article class="tile"><div class="symbol">☼</div><h3>Inciensos y sahumerios</h3><p>Aromas, resinas y elementos para crear un espacio personal.</p><a href="#pedido" data-category="Inciensos y sahumerios">Consultar productos →</a></article>
+  <article class="tile"><div class="symbol">◇</div><h3>Cristales y minerales</h3><p>Cuarzos, piedras pulidas, minerales en bruto y piezas decorativas.</p><a href="#pedido" data-category="Cristales y minerales">Consultar productos →</a></article>
+  <article class="tile"><div class="symbol">✥</div><h3>Artículos religiosos</h3><p>Imágenes, rosarios, medallas y objetos devocionales.</p><a href="#pedido" data-category="Artículos religiosos">Consultar productos →</a></article>
+  <article class="tile"><div class="symbol">☽</div><h3>Tarot y oráculos</h3><p>Mazos, tapetes, bolsas y accesorios para la práctica.</p><a href="#pedido" data-category="Tarot y oráculos">Consultar productos →</a></article>
+  <article class="tile"><div class="symbol">✧</div><h3>Amuletos y altar</h3><p>Talismánes, péndulos y accesorios para tu espacio simbólico.</p><a href="#pedido" data-category="Amuletos y altar">Consultar productos →</a></article>
+ </div>
+ <div class="notice">Importante: el significado espiritual de cada objeto pertenece a tradiciones y prácticas culturales; no sustituye atención médica, psicológica ni asesoría profesional.</div>
+</section>
+<section class="section wrap" id="consultas">
+ <div class="sectionhead"><div><div class="eyebrow">Acompañamiento personalizado</div><h2>Consultas y lecturas</h2></div><p>Solicita una sesión contigo o con otro consultor colaborador. Las modalidades se acuerdan al confirmar la cita.</p></div>
+ <div class="consultgrid">
+  <article class="consult"><div class="symbol">☷</div><h3>Tarot y cartomancia</h3><p>Lectura simbólica para explorar preguntas, posibilidades y perspectivas.</p><a class="btn secondary" href="#pedido" data-service="Tarot y cartomancia">Solicitar consulta</a></article>
+  <article class="consult"><div class="symbol">∞</div><h3>Numerología</h3><p>Interpretación numerológica a partir de los datos que decidas compartir.</p><a class="btn secondary" href="#pedido" data-service="Numerología">Solicitar consulta</a></article>
+  <article class="consult"><div class="symbol">☼</div><h3>Tzolk'in Maya tradicional</h3><p>Exploración del calendario ritual maya, con su sistema y correlación identificados.</p><a class="btn secondary" href="#pedido" data-service="Tzolk'in Maya tradicional">Solicitar consulta</a></article>
+  <article class="consult"><div class="symbol">✺</div><h3>Dreamspell / 13 Lunas</h3><p>Lectura del sistema moderno Dreamspell, presentado por separado del Tzolk'in tradicional.</p><a class="btn secondary" href="#pedido" data-service="Dreamspell / 13 Lunas">Solicitar consulta</a></article>
+  <article class="consult"><div class="symbol">☾</div><h3>Sueños, símbolos y oráculos</h3><p>Una sesión para reflexionar sobre imágenes, narrativas y símbolos personales.</p><a class="btn secondary" href="#pedido" data-service="Sueños, símbolos y oráculos">Solicitar consulta</a></article>
+  <article class="consult"><div class="symbol">✧</div><h3>Orientación espiritual</h3><p>Conversación reflexiva, respetuosa de tus creencias y decisiones personales.</p><a class="btn secondary" href="#pedido" data-service="Orientación espiritual">Solicitar consulta</a></article>
+ </div>
+</section>
+<section class="section wrap" id="perfil">
+ <div class="formbox">
+  <div><div class="eyebrow">Una primera exploración</div><h2 style="font:2.4rem var(--serif);margin:8px 0">Perfil Kodesh</h2><p>Prepara una solicitud para recibir información sobre tu perfil numerológico y, si lo deseas, consultar por separado los sistemas Tzolk'in tradicional y Dreamspell.</p><p><strong style="color:var(--gold2)">Privacidad:</strong> la fecha de nacimiento solo se incluirá en el mensaje si decides enviarlo. Esta versión no guarda tus datos.</p></div>
+  <form id="profileForm">
+   <label for="birth">Fecha de nacimiento (opcional)</label><input type="date" id="birth">
+   <label for="profileSystems">¿Qué te interesa explorar?</label><select id="profileSystems"><option>Numerología</option><option>Tzolk'in Maya tradicional</option><option>Dreamspell / 13 Lunas</option><option>Numerología + Tzolk'in tradicional</option><option>Numerología + Dreamspell</option><option>Los tres sistemas por separado</option></select>
+   <label for="profileNote">Pregunta o comentario (opcional)</label><textarea id="profileNote" placeholder="Cuéntanos qué te gustaría conocer…"></textarea>
+   <button class="btn primary" type="submit" style="margin-top:14px">Solicitar mi perfil por WhatsApp</button>
+  </form>
+ </div>
+</section>
+<section class="section wrap" id="pedido">
+ <div class="sectionhead"><div><div class="eyebrow">Atención directa</div><h2>Pedidos y citas</h2></div><p>En esta primera versión, la solicitud se prepara en WhatsApp. Puedes confirmar existencias, precio, envío o modalidad de consulta directamente.</p></div>
+ <div class="formbox">
+  <div><h3 style="font:1.7rem var(--serif)">Cuéntanos qué necesitas</h3><p>Completa el formulario y se abrirá WhatsApp con el mensaje listo para enviar. Antes de publicar, cambia el número de ejemplo en el archivo de la aplicación.</p><div class="notice">Pagos iniciales previstos: efectivo y transferencia bancaria, sujetos a confirmación directa.</div></div>
+  <form id="orderForm">
+   <div class="formrow"><div><label for="name">Nombre</label><input id="name" required placeholder="Tu nombre"></div><div><label for="contact">¿Qué solicitas?</label><select id="kind"><option>Producto de tienda</option><option>Consulta</option><option>Perfil Kodesh</option><option>Información general</option></select></div></div>
+   <label for="interest">Producto o servicio</label><input id="interest" required placeholder="Ej. cuarzo amatista / consulta de tarot">
+   <div class="formrow"><div><label for="modality">Modalidad</label><select id="modality"><option>Por WhatsApp</option><option>Videollamada</option><option>Presencial</option><option>Solo información</option></select></div><div><label for="pay">Pago preferido (si aplica)</label><select id="pay"><option>Por confirmar</option><option>Efectivo</option><option>Transferencia</option></select></div></div>
+   <label for="details">Detalles</label><textarea id="details" placeholder="Cantidad, fecha preferida o pregunta…"></textarea>
+   <button class="btn primary" type="submit" style="margin-top:14px">Preparar mensaje en WhatsApp</button>
+  </form>
+ </div>
+</section>
+<section class="section wrap" id="biblioteca">
+ <div class="sectionhead"><div><div class="eyebrow">Lecturas y conocimiento</div><h2>Biblioteca Kodesh</h2></div><p>Los artículos se alojan en tu Blogger y pueden mostrarse aquí mediante el feed público, sin tener que duplicarlos. <a href="https://universokodesh.blogspot.com/" target="_blank" rel="noopener" style="color:var(--gold2)">Visitar el blog ↗</a></p></div>
+ <div class="bloglist" id="blogList"><article class="blogcard"><small>BIBLIOTECA</small><h3>Explora el blog Universo Kodesh</h3><p>Conecta esta aplicación con las publicaciones más recientes de tu Blogger.</p><a href="https://universokodesh.blogspot.com/" target="_blank" rel="noopener">Leer en Blogger →</a></article><article class="blogcard"><small>LECTURAS</small><h3>Símbolos y tradiciones</h3><p>Los artículos publicados aparecerán aquí cuando el feed del blog esté habilitado.</p><a href="https://universokodesh.blogspot.com/feeds/posts/default?alt=json-in-script&callback=bloggerFeed" target="_blank" rel="noopener">Comprobar feed ↗</a></article><article class="blogcard"><small>ACTUALIZACIONES</small><h3>Contenido vivo</h3><p>Publica desde Blogger; la aplicación puede recuperar automáticamente los títulos y enlaces.</p><a href="https://universokodesh.blogspot.com/" target="_blank" rel="noopener">Abrir biblioteca →</a></article></div>
+ <p class="empty" id="blogStatus">Intentando cargar las últimas entradas del blog…</p>
+</section>
+<section class="section wrap" id="nosotros">
+ <div class="sectionhead"><div><div class="eyebrow">La intención detrás del proyecto</div><h2>Acerca de Universo Kodesh</h2></div></div>
+ <div class="tile"><h3>Un espacio de exploración, no de dogmas</h3><p>Universo Kodesh reúne productos espirituales, consultas y contenidos sobre símbolos, tradiciones y caminos de reflexión. Buscamos presentar cada sistema con claridad, respetar sus diferencias y acompañar a cada persona sin prometer resultados garantizados.</p><p style="margin-top:12px">Lema oficial: “Un universo de símbolos y conocimiento.” El logotipo original se utiliza sin modificaciones.</p></div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footrow"><div><strong>Universo Kodesh</strong><div>Un espacio para explorar el símbolo y el conocimiento.</div></div><div><a href="https://universokodesh.blogspot.com/" target="_blank" rel="noopener">Blogger</a> · <a href="#pedido">Pedidos y consultas</a></div><div>© <span id="year"></span> Universo Kodesh</div></div></footer>
+<a class="wa-float" id="waFloat" href="#pedido">WhatsApp ✧</a>
+<script>
+/* CONFIGURACIÓN: reemplaza el número por tu WhatsApp en formato internacional, solo números.
+   Ejemplo México: 5215512345678. No uses +, espacios ni guiones. */
+const WHATSAPP_NUMBER = "5210000000000";
+const BLOG_HOME = "https://universokodesh.blogspot.com/";
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('show'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('show')));
+document.querySelectorAll('[data-category]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('kind').value='Producto de tienda';document.getElementById('interest').value=a.dataset.category;}));
+document.querySelectorAll('[data-service]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('kind').value='Consulta';document.getElementById('interest').value=a.dataset.service;}));
+function sendWhatsApp(message){
+ if(WHATSAPP_NUMBER.includes('0000000000')){alert('Antes de usar WhatsApp, abre index.html y cambia WHATSAPP_NUMBER por tu número real en formato internacional.');return;}
+ window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(message),'_blank','noopener');
+}
+document.getElementById('orderForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const msg=`Hola, Universo Kodesh. Mi nombre es ${document.getElementById('name').value}.\nSolicitud: ${document.getElementById('kind').value}\nProducto/servicio: ${document.getElementById('interest').value}\nModalidad: ${document.getElementById('modality').value}\nPago preferido: ${document.getElementById('pay').value}\nDetalles: ${document.getElementById('details').value||'Sin detalles adicionales'}`;
+ sendWhatsApp(msg);
+});
+document.getElementById('profileForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const birth=document.getElementById('birth').value||'No compartida';
+ const msg=`Hola, Universo Kodesh. Quisiera solicitar información para mi Perfil Kodesh.\nFecha de nacimiento: ${birth}\nSistema(s): ${document.getElementById('profileSystems').value}\nPregunta: ${document.getElementById('profileNote').value||'Sin comentario'}`;
+ sendWhatsApp(msg);
+});
+window.bloggerFeed=function(json){
+ const entries=json.feed&&json.feed.entry?json.feed.entry:[];
+ const list=document.getElementById('blogList');
+ if(!entries.length){document.getElementById('blogStatus').textContent='No se encontraron publicaciones en el feed. Revisa que el blog sea público y que el feed esté habilitado en Configuración de Blogger.';return;}
+ list.innerHTML='';
+ entries.slice(0,6).forEach(entry=>{
+  const title=entry.title&&entry.title.$t?entry.title.$t:'Entrada de Universo Kodesh';
+  const link=(entry.link||[]).find(l=>l.rel==='alternate');
+  const url=link?link.href:BLOG_HOME;
+  const summary=(entry.summary&&entry.summary.$t||entry.content&&entry.content.$t||'Lee la publicación en el blog.').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').slice(0,180);
+  const card=document.createElement('article');card.className='blogcard';
+  const small=document.createElement('small');small.textContent='BLOGGER · UNIVERSO KODESH';
+  const h=document.createElement('h3');h.textContent=title;
+  const p=document.createElement('p');p.textContent=summary+(summary.length>=180?'…':'');
+  const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent='Leer artículo →';
+  card.append(small,h,p,a);list.append(card);
+ });
+ document.getElementById('blogStatus').textContent='Últimas publicaciones cargadas desde Blogger.';
+};
+(function(){
+ const s=document.createElement('script');
+ s.src=BLOG_HOME+'feeds/posts/default?alt=json-in-script&callback=bloggerFeed&max-results=6';
+ s.onerror=()=>document.getElementById('blogStatus').textContent='No se pudo cargar el feed automáticamente en esta vista. El enlace al Blogger sigue disponible arriba.';
+ document.body.appendChild(s);
+})();
+if('serviceWorker' in navigator && location.protocol.startsWith('http')){navigator.serviceWorker.register('./sw.js').catch(()=>{});}
+</script>
+</body>
+</html>
